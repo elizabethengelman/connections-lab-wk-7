@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 /*-----Database------*/
 let datastore = require("nedb");
 const { response } = require("express");
-let db = new datastore("trees.db");
+let db = new datastore("images.db");
 db.loadDatabase();
 
 /*-----Routes------*/
