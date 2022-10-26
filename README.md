@@ -6,6 +6,8 @@
 - `npm start`
 - navigate to [http://localhost:3000/](http://localhost:3000/)
 
+## Notes
+When I first tried to submit an image file, it was 15.3 MB and I ran into an issue on the server where the app ran out of memory. When I resized the image to about 1 MB and tried to again, I worked. I may do some more digging into why this is happening. Though it makes sense that uploading a larger image into memory would be more of a strain on the server, I'm not sure why a 15 MB image would cause the server to exceed the 512 MB available memory.
 ## Resources
 
 - uploading a file: https://attacomsian.com/blog/uploading-files-nodejs-express
