@@ -53,7 +53,9 @@ app.post("/upload", (req, res) => {
   let file = req.files.file;
   file["longitude"] = req.body.longitude;
   file["latitude"] = req.body.latitude;
+  console.log("Received file", file.name);
   db.insert(file);
+  console.log("File was inserted into the db");
   res.send({ success: true, message: "File uploaded" });
 });
 
