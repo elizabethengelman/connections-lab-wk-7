@@ -9,15 +9,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="sub-container feed">
-        <h1>Get to Know Your Arboreal Neighbors</h1>
-        <p>Upload a photo of a tree with it's latitude and longitude</p>
-        <h3 id="random-quote"></h3>
+      <h1>Get to Know Your Arboreal Neighbors</h1>
+      <p>Upload a photo of a tree with it's latitude and longitude</p>
+      <div class="sub-container">
+        <input id="file" type="file" />
+        <input id="latitude" type="text" placeholder="Latitude" />
+        <input id="longitude" type="text" placeholder="Longitude" />
+        <input id="file-submit" type="submit" />
       </div>
-      <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="filetoupload" />
-        <input type="submit" />
-      </form>
+      <div class="sub-container">
+        <div id="images"></div>
+      </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
